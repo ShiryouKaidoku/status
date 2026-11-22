@@ -22,7 +22,8 @@
     * { box-sizing: border-box; }
     body {
         margin: 0;
-        font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans JP", "Yu Gothic", sans-serif;
+        /* アプリ本体と同じ既定フォント（base.css の font-family-default） */
+        font-family: 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', 'YuGothic', 'Yu Gothic', 'Noto Sans JP', 'Meiryo', sans-serif;
         color: var(--ink);
         background: #f8f9fa;
         line-height: 1.7;
@@ -43,7 +44,8 @@
     }
     .banner {
         border: 1px solid var(--line);
-        border-radius: 12px;
+        /* 左の色ボーダーは角を丸めない（右側だけカードと同じ角丸） */
+        border-radius: 0 12px 12px 0;
         padding: 20px 22px;
         margin-bottom: 28px;
         background: #fff;
@@ -146,7 +148,7 @@
 <div class="wrap">
     <header class="page-head">
         <h1>ShiryouKaidoku サービス状況</h1>
-        <p>稼働状況・障害履歴・メンテナンス予定を掲載しています。アプリ本体が使えないときでも、このページは別の場所（GitHub Pages）で動くので見られます。</p>
+        <p>稼働状況・障害履歴・メンテナンス予定を掲載しています。アプリ本体が使えないときでも、このページは閲覧できます。</p>
     </header>
 
     <div id="overall-banner" class="banner">
