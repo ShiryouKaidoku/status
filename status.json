@@ -2,9 +2,11 @@
     "updated_at": "2026-11-22T00:00:00+09:00",
     "overall": "operational",
     "components": [
-        { "name": "アプリ本体", "status": "operational" },
+        { "name": "アプリ本体（画面・API）", "status": "operational" },
+        { "name": "データベース", "status": "operational" },
         { "name": "AIチャット", "status": "operational" },
-        { "name": "ファイル・画像の保存", "status": "operational" }
+        { "name": "ファイル・画像の保存", "status": "operational" },
+        { "name": "外部連携（Google Drive・Gmail・カレンダー）", "status": "operational" }
     ],
     "note": ""
 }
